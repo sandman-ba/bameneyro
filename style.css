@@ -1,0 +1,52 @@
+@import url("colors/catppuccin.css");
+
+body {
+    background-color: var(--crust);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--mantle);
+    color: var(--text);
+}
+
+select {
+    background-color: var(--base);
+    color: var(--text);
+    border: 1px solid var(--text);
+    border-radius: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+select:active, select:focus {
+    color: var(--sky);
+    background-color: var(--surface2);
+    border-color: var(--sky);
+}
+
+footer {
+    background-color: var(--mantle);
+    color: var(--text);
+}
+
+a:link {
+    color: var(--sapphire);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--mauve);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--maroon);
+    text-decoration: underline;
+}
