@@ -1,105 +1,5 @@
 @import url("colors/catppuccin.css");
 
-body {
-    background-color: var(--crust);
-    color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--mantle);
-    color: var(--text);
-}
-
-nav {
-    background-color: var(--mantle);
-    padding: 20px;
-}
-
-ul.navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--base);
-}
-
-li.navigation {
-    float: left;
-}
-
-li.navigation a {
-    display: block;
-    text-align: center;
-    color: var(--mauve);
-    padding: 14px 16px;
-}
-
-li.navigation a:hover {
-    background-color: var(--mauve);
-    color: var(--base);
-    text-decoration: none;
-}
-
-li.theme-select {
-    float: right;
-}
-
-select {
-    background-color: var(--base);
-    color: var(--mauve);
-    border: 0;
-    border-radius: 3px;
-    padding: 14px 16px;
-}
-
-select:active, select:focus {
-    color: var(--base);
-    background-color: var(--mauve);
-}
-
-footer {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-    background-color: var(--mantle);
-    color: var(--text);
-    padding: 20px;
-}
-
-.header-middle {
-    text-align: center;
-}
-
-.header-left {
-    flex: 0 0 10%;
-    background-color: var(--base);
-    border-radius: 8px;
-    padding: 10px;
-}
-
-.header-right {
-    flex: 0 0 10%;
-    background-color: var(--base);
-    border-radius: 60%;
-    padding: 10px;
-}
-
-.footer-right, .header-right {
-    text-align: right;
-}
-
-.footer-left, .footer-right, .header-middle {
-    background-color: var(--base);
-    padding: 0 20px;
-    border-radius: 8px;
-}
-
 a:link {
     color: var(--sapphire);
     text-decoration: none;
@@ -125,12 +25,142 @@ img {
     height: auto;
 }
 
+body {
+    background-color: var(--crust);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--mantle);
+    background-image: url("figures/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--text);
+    border-radius: 8px;
+}
+
+.header-middle {
+    background-color: rgba(var(--base-rgb) / 0.8);
+    border-radius: 8px;
+    padding: 0 20px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.header-left {
+    flex: 0 0 10%;
+    background-color: rgba(var(--base-rgb) / 0.8);
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.header-right {
+    flex: 0 0 10%;
+    background-color: rgba(var(--base-rgb) / 0.8);
+    border-radius: 60%;
+    padding: 6px;
+}
+
+nav {
+    background-color: var(--mantle);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: var(--base);
+}
+
+li.navigation {
+    float: left;
+}
+
+li.navigation a {
+    display: block;
+    text-align: center;
+    color: var(--mauve);
+    padding: 14px 16px;
+    font-size: 1.3em;
+}
+
+li.navigation a:hover {
+    background-color: var(--mauve);
+    color: var(--base);
+    text-decoration: none;
+}
+
+li.theme-select {
+    float: right;
+}
+
+select {
+    background-color: var(--base);
+    color: var(--mauve);
+    border: 0;
+    border-radius: 3px;
+    padding: 14px 16px;
+    font-size: 1.3em;
+}
+
+select:active, select:focus, select:hover {
+    color: var(--base);
+    background-color: var(--mauve);
+}
+
+section {
+    background-color: var(--mantle);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    background-color: var(--mantle);
+    color: var(--text);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.footer-right, .header-right {
+    text-align: right;
+}
+
+.footer-left, .footer-right {
+    background-color: var(--base);
+    padding: 0 20px;
+    border-radius: 8px;
+}
+
 .fa-contact-logos {
     /* color: var(--mauve); */
-    font-size: 36px;
+    font-size: 2.3em;
     margin: 0 10px;
+}
+
+.footer-left a:visited {
+    color: var(--sapphire);
 }
 
 .footer-left a:hover {
     text-decoration: none;
+    color: var(--green);
 }
