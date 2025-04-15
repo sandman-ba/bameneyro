@@ -7,28 +7,97 @@ body {
 }
 
 header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: var(--mantle);
     color: var(--text);
+}
+
+nav {
+    background-color: var(--mantle);
+    padding: 20px;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--base);
+}
+
+li.navigation {
+    float: left;
+}
+
+li.navigation a {
+    display: block;
+    text-align: center;
+    color: var(--mauve);
+    padding: 14px 16px;
+}
+
+li.navigation a:hover {
+    background-color: var(--mauve);
+    color: var(--base);
+    text-decoration: none;
+}
+
+li.theme-select {
+    float: right;
 }
 
 select {
     background-color: var(--base);
-    color: var(--text);
-    border: 1px solid var(--text);
+    color: var(--mauve);
+    border: 0;
     border-radius: 3px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding: 14px 16px;
 }
 
 select:active, select:focus {
-    color: var(--sky);
-    background-color: var(--surface2);
-    border-color: var(--sky);
+    color: var(--base);
+    background-color: var(--mauve);
 }
 
 footer {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
     background-color: var(--mantle);
     color: var(--text);
+    padding: 20px;
+}
+
+.header-middle {
+    text-align: center;
+}
+
+.header-left {
+    flex: 0 0 10%;
+    background-color: var(--base);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.header-right {
+    flex: 0 0 10%;
+    background-color: var(--base);
+    border-radius: 60%;
+    padding: 10px;
+}
+
+.footer-right, .header-right {
+    text-align: right;
+}
+
+.footer-left, .footer-right, .header-middle {
+    background-color: var(--base);
+    padding: 0 20px;
+    border-radius: 8px;
 }
 
 a:link {
@@ -49,4 +118,19 @@ a:hover {
 a:active {
     color: var(--maroon);
     text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fa-contact-logos {
+    /* color: var(--mauve); */
+    font-size: 36px;
+    margin: 0 10px;
+}
+
+.footer-left a:hover {
+    text-decoration: none;
 }

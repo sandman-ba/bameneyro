@@ -1,4 +1,3 @@
-:root,
 :root.latte {
   --rosewater: #dc8a78;
   --rosewater-rgb: 220 138 120;
@@ -317,6 +316,7 @@
   --crust-hsl: 235.714 22.581% 12.157%;
 }
 
+:root,
 :root.mocha {
   --rosewater: #f5e0dc;
   --rosewater-rgb: 245 224 220;
