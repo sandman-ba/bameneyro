@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang=en>
 <head>
@@ -14,35 +16,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-left">
-            <img src="figures/logo.jpg" alt="University of Tennessee Math Department logo" />
-        </div>
-        <div class="header-middle">
-            <h1>Bernardo Ameneyro</h1>
-        </div>
-        <div class="header-right">
-            <img src="figures/profile.jpg" alt="Profile Picture" style="border-radius:70%;" />
-        </div>
-    </header>
+    {% include header.html %}
 
-    <nav>
-        <ul class="navigation">
-            <li class="navigation"><a href="index.html" title="Go to About me page">About Me</a></li>
-            <li class="navigation"><a href="research.html" title="Go to Research projects page">Research</a></li>
-            <li class="navigation"><a href="code.html" title="Go to Programming projects page">Code</a></li>
-
-            <li class="theme-select">
-                <select name="theme-select" id="theme-select">
-                    <option value="" disabled selected>Choose Theme</option>
-                    <option value="latte">Latte</option>
-                    <option value="frappe">Frappe</option>
-                    <option value="macchiato">Macchiato</option>
-                    <option value="mocha">Mocha</option>
-                </select>
-            </li>
-        </ul>
-    </nav>
+    {% include navigation.html %}
 
     <section class="about-me">
         <p>
@@ -57,25 +33,6 @@
         </p>
     </section>
 
-    <footer>
-        <div class="footer-left">
-            <h4>Contact:</h4>
-            <a href="mailto:bameneyr@vols.utk.edu" target="_blank" title="Email Bernardo Ameneyro">
-                <i class="fa fa-envelope fa-contact-logos" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/bernardo-ameneyro" target="_blank" title="Go to Bernardo Ameneyro on LinkedIn">
-                <i class="fab fa-linkedin fa-contact-logos" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/sandman-ba" target="_blank" title="Go to Bernardo Ameneyro's GitHub site">
-                <i class="fab fa-github fa-contact-logos" aria-hidden="true"></i>
-            </a>
-        </div>
-        <div class="footer-right">
-            <p>Copyright &copy; 2025 Bernardo Ameneyro</p>
-            <p>This page is licensed under a <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" title="Go to license">Creative Commons Attribution-NoDerivatives 4.0 International License</a> (CC-BY-ND 4.0).</p>
-            <p>Source code: <a href="https://github.com/sandman-ba/bameneyro/" target="_blank" title="Go to source code">GitHub</a></p>
-            <p>Color schemes: <a href="https://catppuccin.com/" target="_blank" title="Go to Catppuccin website">Catppuccin</a></p>
-        </div>
-    </footer>
+    {% include footer.html %}
 </body>
 </html>
