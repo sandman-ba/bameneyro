@@ -1,5 +1,3 @@
-@import url("colors/catppuccin.css");
-
 a:link {
     color: var(--sapphire);
     text-decoration: none;
@@ -39,7 +37,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: var(--mantle);
-    background-image: url("figures/background.jpg");
+    background-image: url("/assets/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

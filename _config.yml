@@ -1,0 +1,16 @@
+include: ['_pages']
+
+defaults:
+  -
+    scope:
+      path: "/assets/"
+    values:
+      permalink: /:path
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "Bernardo Ameneyro"
+      keywords: "Ameneyro, Bernardo, Quantum Computing, Topological Data Analysis, Machine Learning, Mathematics, LaTeX, Python, Large Language Models"
