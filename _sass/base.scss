@@ -37,7 +37,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: var(--mantle);
-    background-image: url("assets/images/background.jpg");
+    background-image: url("{{ site.baseurl }}/assets/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

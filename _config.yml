@@ -1,6 +1,6 @@
 domain: sandman-ba.github.io
 url: https://sandman-ba.github.io
-baseurl: /bameneyro/
+baseurl: /bameneyro
 
 include: ['_pages']
 
